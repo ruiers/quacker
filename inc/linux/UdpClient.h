@@ -2,6 +2,7 @@
 #define __INC_LINUX_UDPCLIENT__
 
 #include <netinet/in.h>
+#include <stdio.h>
 
 class UdpClient
 {

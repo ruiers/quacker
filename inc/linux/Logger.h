@@ -1,3 +1,8 @@
+#ifndef __INC_LINUX_LOGGER__
+#define __INC_LINUX_LOGGER__
+
+#include <sys/stat.h>
+
 class Logger
 {
     enum
@@ -41,3 +46,5 @@ extern Logger Log;
 #define LogVer(...) { Log.to_devices(__VA_ARGS__); Log.to_devices("\n"); }
 #define LogDbg(...) { Log.add_time(); Log.to_devices(__VA_ARGS__); Log.to_devices("\n"); }
 #define LogHex(...) { Log.Hexdump(__VA_ARGS__); }
+
+#endif

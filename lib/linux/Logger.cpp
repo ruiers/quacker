@@ -7,7 +7,7 @@
 #include <sys/stat.h>
 #include <sys/time.h>
 #include <time.h>
-#include "../../inc/linux/logger.h"
+#include "../../inc/linux/Logger.h"
 
 Logger Log;
 
